@@ -56,7 +56,6 @@ header{
     list-style: none;
 }
 .menu{
-    padding: 100%;
     display: grid;
     width: 100%;
     background-color: aliceblue;
@@ -69,6 +68,9 @@ header{
     display: flex;
     font-size: 60px;
     align-items: center;
+}
+nav.menu{
+    display: inline-flex;
 }
 a:hover{color: red; 
 }
