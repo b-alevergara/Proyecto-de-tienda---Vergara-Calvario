@@ -56,13 +56,18 @@ header{
 }
 .menu{
     display: grid;
-    width: 100%;
     background-color: aliceblue;
     gap: 20px;
     justify-content: center;
     align-items: center;
     border-radius: 2rem;
-}    
+
+    transition-duration: 2s;
+} 
+.menu:hover{
+    background-color: rgb(255, 177, 245);
+    width: 100%;
+}   
 .menuSecciones{
     display: flex;
     font-size: 60px;
@@ -137,6 +142,10 @@ h3{
     background-size: 600px 400px;
     text-align: center;
     border-radius: 2rem;
+
+    animation-name: crecer;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
 }
 .cuadroSeccionTres{
     grid-area: cuadro;
@@ -148,6 +157,8 @@ h3{
     text-align: center;
     line-height: 2;
     border-radius: 2rem;
+
+    animation: crecer 2s infinite
 }
 .seccionTresDescripcion{
     display: flex;
@@ -156,7 +167,14 @@ h3{
     justify-content: center;
     align-items: center;
 }
-.formulario{
+
+@keyframes crecer {
+    0%{transform: scale(1);}
+    25%{transform: scale(.9);}
+    50%{transform: scale(.8);}
+    75%{transform: scale(.9);}
+    }
+    .formulario{
     grid-area: cuadro;
     display: grid;
     margin: 2rem;
@@ -195,8 +213,8 @@ h3{
     display: grid
     grid-template-areas:
     " head head head "
-    " foto . foto "
-    " foto . foto "
+    " foto1 . foto3 "
+    " foto2 . foto4 "
     " footer footer footer "
     ;
     grid-template-columns: 1fr, 2fr, 2fr;
@@ -206,7 +224,7 @@ h3{
 
 .contenidoPagina{
     grid-area: foto;
-    display: flex;
+    display: inline-flex;
     width: 100%;
     height: 1100px;
     padding: 5rem;
@@ -220,31 +238,56 @@ h3{
     text-align: justify;
     flex-direction: row;
 }
+
 img{
     display: flex;
     width: auto;
     height: auto;
-    max-width: 300px;
+    width: 300px;
     max-height: 300px;
     justify-content: center;
     align-items: center;
 }
 .galeriaUno{
-    grid-area: foto;
     width:100%;
     height: 400px;
     line-height: 50px;
 }
 .galeriaDos{
-    grid-area: foto;
     width:100%;
     height: 400px;
     line-height: 50px;
 }
-.galeriaNombreArticulo{
+p.galeriaNombreArticulo{
     display: flex;
     justify-content: center;
     align-items: center;
+
+    animation: rotar 3s 1 linear
+}
+@keyframes rotar {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(359deg);
+    }
+}
+picture.galeriaImagenUno{
+    display: grid;
+    grid-area: foto1;
+}
+picture.galeriaImagenDos{
+    display: grid;
+    grid-area: foto2;
+}
+picture.galeriaImagenTres{
+    display: grid;
+    grid-area: foto3;
+}
+picture.galeriaImagenCuatro{
+    display: grid;
+    grid-area: foto4;
 }
 p.img{
     display: flex;
@@ -258,6 +301,9 @@ ul li{
     display: flex;
     justify-content: center;
     text-decoration:none;
+}
+.linkInicio:hover{
+    color: rgb(241, 68, 189);
 }
 .footer{
     grid-area: footer;
