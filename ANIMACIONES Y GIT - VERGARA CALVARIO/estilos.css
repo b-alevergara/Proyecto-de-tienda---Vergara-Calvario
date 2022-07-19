@@ -146,6 +146,7 @@ h3{
     animation-name: crecer;
     animation-duration: 2s;
     animation-iteration-count: infinite;
+    animation-delay: 3s;
 }
 .cuadroSeccionTres{
     grid-area: cuadro;
