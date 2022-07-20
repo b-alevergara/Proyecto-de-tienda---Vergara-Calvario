@@ -17,7 +17,6 @@ a{
 h2{
     display: flex;
     width: 100%;
-    /* height: 50px; */
     color: red;
     text-transform: uppercase;
     font-size: 3em;
@@ -89,7 +88,7 @@ p{
     transition-duration: 2s;
 } 
 .menu:hover{
-    background-color: rgb(198, 235, 250);
+    background-color: rgb(250, 198, 224);
     width: 100%;
 }   
 .menuSecciones{
@@ -108,7 +107,7 @@ a:hover{
     text-transform: capitalize;
     font-family: 'Oleo Script', cursive;
 } */
-.cuadroSecciones{
+/* .cuadroSecciones{
     padding: 1%;
     display: flex;
     background-color: white;
@@ -117,8 +116,7 @@ a:hover{
     text-align: justify;
     justify-content: space-evenly;
     align-items: center;
-}
-
+} */
 .seccionUno{
     grid-area: seccionUno;
     display: grid;
@@ -177,15 +175,11 @@ a:hover{
     align-items: center;
     justify-content: center;
 
-
     animation: crecer 2s infinite
 }
 .seccionTresDescripcion{
     display: flex;
     width: 550px;
-    height: 200px;
-    justify-content: center;
-    align-items: center;
 }
 
 @keyframes crecer {
@@ -197,18 +191,22 @@ a:hover{
 .seccionCuatro{
     grid-area: seccionCuatro;
     display: grid;
+    
+}
+.container{
+    display: grid;
     margin: 2rem;
     padding: 2rem;
-    height: 600px;
-    background-image: url(https://images.unsplash.com/photo-1558591710-4b4a1ae0f04d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8Zm9uZG8lMjBibGFuY298ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60);
-    background-repeat: no-repeat; 
-    background-size: 80% 80%;
-    flex-flow: row;
+    height: 400px;
     text-align: center;
-    justify-content: space-around;
-    line-height: 4;
+    align-items: center;
+    justify-content: center;
+    line-height: 2;
     border-radius: 2rem;
-    overflow: hidden;
+}
+label{
+    font-size: 2em;
+    text-transform: capitalize;
 }
 .formularioContorno{
     height: 80%;
@@ -322,7 +320,7 @@ p.img{
     text-decoration:none;
 } */
 .linkInicio:hover{
-    color: rgb(241, 68, 189);
+    color: rgb(247, 150, 206);
 }
 .footer{
     grid-area: footer;
@@ -335,9 +333,11 @@ p.img{
     font-size: 2em;
     color: black;
     position: sticky;
+}
+footer{
     height: 8rem;
 }
-@media screen and (max-width: 1024px) {
+/* @media screen and (max-width: 1024px) {
     body{ background-color: rgb(190, 204, 252);}
     #contenedor{
         grid-template-areas:
@@ -348,4 +348,4 @@ p.img{
         " footer footer";
         grid-template-columns: repeat (2fr, 2fr);
         grid-template-rows: 2fr, 1fr, 3fr, 3fr, 2fr;
-    }    }
+    }    } */
