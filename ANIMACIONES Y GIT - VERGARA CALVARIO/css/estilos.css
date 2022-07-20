@@ -3,105 +3,17 @@
     padding: 0px;
     box-sizing: border-box;
 }
-<<<<<<< HEAD
 html {
     font-size: 62.5%;
 }
 a{
     text-decoration: none;
     color:rgb(5, 5, 5);
-=======
-
-html {
-    font-size: 62.5%;
-}
-#contenedor{
-    display: grid;
-    height: 40vh;
-    grid-template-areas:
-    " head head head head "
-    " menu menu menu menu "
-    " cuadro . . cuadro "
-    " cuadro . . cuadro "
-    " footer footer footer footer";
-    grid-template-columns: repeat (4, 1fr);
-    grid-template-rows: 2fr, 50px, 3fr, 3fr, 2fr;
-    gap: .5rem;
-}    
-.head{
-    grid-area: head;
-    display: grid;
-    position: fixed;
-    width: 100%;
-    background-color: rgba(139, 191,239, 0.68);
-}
-header{
-    display: flex;
-    background-color: rgba(139, 191,239, 0.68);
-    height: 8rem;
-    position: static;
-}
-.seccionMenu{
-    grid-area: menu;
-    display: grid;
-    width: 100%;
-    justify-content: flex-start;
-}
-.logoAle{
-    height: auto;
-    width: 100%;
-    max-width: 300px;
-}
-.temaDePagina{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    font-family: 'Abril Fatface', cursive;
-    font-size: 2em;
-    text-transform: capitalize;
-    text-decoration: none;
-    list-style: none;
-}
-.menu{
-    display: grid;
-    background-color: aliceblue;
-    gap: 20px;
-    justify-content: center;
-    align-items: center;
-    border-radius: 2rem;
-
-    transition-duration: 2s;
-} 
-.menu:hover{
-    background-color: rgb(255, 177, 245);
-    width: 100%;
-}   
-.menuSecciones{
-    display: flex;
-    font-size: 60px;
-    align-items: center;
-}
-nav.menu{
-    display: inline-flex;
-}
-a:hover{color: red; 
-}
-a{
-    text-decoration: none;
-    color:rgb(11, 78, 104);
->>>>>>> 8552fa11bbf222f89fdb9c76f59c0e415f904cd1
     font-size: medium;
     text-transform: uppercase;
     font-family: 'Abril Fatface', cursive;
     padding: 1rem;
 }
-<<<<<<< HEAD
-=======
-.nombrePagina{
-    text-transform: capitalize;
-    font-family: 'Oleo Script', cursive;
-}
->>>>>>> 8552fa11bbf222f89fdb9c76f59c0e415f904cd1
 h2{
     display: flex;
     width: 100%;
@@ -115,7 +27,6 @@ h2{
 h3{
     display: flex;
     justify-content: center;
-<<<<<<< HEAD
     color: black;
     text-transform: capitalize;
     font-weight: bolder;
@@ -194,11 +105,6 @@ a:hover{
     font-family: 'Oleo Script', cursive;
 } */
 .cuadroSecciones{
-=======
-}
-.cuadroSecciones{
-    grid-area: cuadro;
->>>>>>> 8552fa11bbf222f89fdb9c76f59c0e415f904cd1
     padding: 1%;
     display: flex;
     background-color: white;
@@ -208,7 +114,6 @@ a:hover{
     justify-content: space-evenly;
     align-items: center;
 }
-<<<<<<< HEAD
 
 .seccionUno{
     grid-area: seccionUno;
@@ -233,26 +138,6 @@ a:hover{
     display: grid;
 }
 .cuadroSeccionDos{
-=======
-.cuadroSeccionUno{
-    grid-area: cuadro;
-    display: grid;
-    margin: 2rem;
-    padding: 2rem;
-    height: 500px;
-    background-color: rgb(250, 207, 241);
-    background-image: url(https://media.istockphoto.com/photos/organised-pantry-items-in-storage-room-with-nonperishable-food-picture-id1302554065?k=20&m=1302554065&s=612x612&w=0&h=9JVItyQbfHA-QEGLEcIdCUFknjDI2wMzziddKtG_MjA=);
-    background-repeat: no-repeat;
-    background-position: 5%;
-    background-size: 600px 300px;
-    line-height: 30px;
-    font-weight: bolder;
-    text-align: center;
-    border-radius: 2rem;
-}
-.cuadroSeccionDos{
-    grid-area: cuadro;
->>>>>>> 8552fa11bbf222f89fdb9c76f59c0e415f904cd1
     display: grid;
     margin: 2rem;
     padding: 2rem;
@@ -268,16 +153,11 @@ a:hover{
     animation-iteration-count: infinite;
     animation-delay: 3s;
 }
-<<<<<<< HEAD
 .seccionTres{
     grid-area: seccionTres;
     display: grid;
 }
 .cuadroSeccionTres{
-=======
-.cuadroSeccionTres{
-    grid-area: cuadro;
->>>>>>> 8552fa11bbf222f89fdb9c76f59c0e415f904cd1
     display: grid;
     margin: 2rem;
     padding: 2rem;
@@ -303,41 +183,25 @@ a:hover{
     50%{transform: scale(.8);}
     75%{transform: scale(.9);}
     }
-<<<<<<< HEAD
 .seccionCuatro{
     grid-area: seccionCuatro;
-=======
-    .formulario{
-    grid-area: cuadro;
->>>>>>> 8552fa11bbf222f89fdb9c76f59c0e415f904cd1
     display: grid;
     margin: 2rem;
     padding: 2rem;
     height: 600px;
     background-image: url(https://images.unsplash.com/photo-1558591710-4b4a1ae0f04d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8Zm9uZG8lMjBibGFuY298ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60);
     background-repeat: no-repeat; 
-<<<<<<< HEAD
     background-size: 80% 80%;
-=======
-    background-size: 600px 700px;
->>>>>>> 8552fa11bbf222f89fdb9c76f59c0e415f904cd1
     flex-flow: row;
     text-align: center;
     justify-content: space-around;
     line-height: 4;
     border-radius: 2rem;
-<<<<<<< HEAD
     overflow: hidden;
 }
 .formularioContorno{
     height: 80%;
     width: 90%;
-=======
-}
-.formularioContorno{
-    height: 550px;
-    width: 450px;
->>>>>>> 8552fa11bbf222f89fdb9c76f59c0e415f904cd1
     justify-content: space-between;
     gap: 30px;
     border-style: hidden;
@@ -355,11 +219,7 @@ a:hover{
     font-family: 'Abril Fatface', cursive;
     text-transform: uppercase;
 }
-<<<<<<< HEAD
 /* .content{
-=======
-.content{
->>>>>>> 8552fa11bbf222f89fdb9c76f59c0e415f904cd1
     display: grid
     grid-template-areas:
     " head head head "
@@ -370,12 +230,7 @@ a:hover{
     grid-template-columns: 1fr, 2fr, 2fr;
     grid-template-rows: 1fr, 2fr, 2fr, 1fr;
     max-width: 728px;
-<<<<<<< HEAD
 } */
-=======
-}
-
->>>>>>> 8552fa11bbf222f89fdb9c76f59c0e415f904cd1
 .contenidoPagina{
     grid-area: foto;
     display: inline-flex;
@@ -392,10 +247,6 @@ a:hover{
     text-align: justify;
     flex-direction: row;
 }
-<<<<<<< HEAD
-=======
-
->>>>>>> 8552fa11bbf222f89fdb9c76f59c0e415f904cd1
 img{
     display: flex;
     width: auto;
@@ -454,19 +305,11 @@ p.img{
     display: flex;
     justify-content: center;
 }
-<<<<<<< HEAD
 /* ul li{
     display: flex;
     justify-content: center;
     text-decoration:none;
 } */
-=======
-ul li{
-    display: flex;
-    justify-content: center;
-    text-decoration:none;
-}
->>>>>>> 8552fa11bbf222f89fdb9c76f59c0e415f904cd1
 .linkInicio:hover{
     color: rgb(241, 68, 189);
 }
@@ -484,11 +327,7 @@ ul li{
     height: 8rem;
 }
 @media screen and (max-width: 1024px) {
-<<<<<<< HEAD
     body{ background-color: rgb(190, 204, 252);}
-=======
-    body{ background-color: rgb(243, 171, 219);}
->>>>>>> 8552fa11bbf222f89fdb9c76f59c0e415f904cd1
     #contenedor{
         grid-template-areas:
         " head head  "
