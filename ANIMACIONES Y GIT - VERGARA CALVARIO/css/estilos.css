@@ -17,7 +17,7 @@ a{
 h2{
     display: flex;
     width: 100%;
-    color: red;
+    color: rgb(255, 255, 255);
     text-transform: uppercase;
     font-size: 3em;
     font-family: 'Abril Fatface', cursive;
@@ -37,9 +37,7 @@ p{
     text-transform: capitalize;
     font-size: 2.5em;
     font-weight: lighter;
-
 }
-/* grid */
 .grid{
     display: grid;
     height: 40vh;
@@ -127,6 +125,7 @@ a:hover{
     margin: 2rem;
     padding: 2rem;
     height: 400px;
+    /* background-image: url(https://images.unsplash.com/photo-1554034483-04fda0d3507b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80); */
     background-image: url(https://media.istockphoto.com/photos/organised-pantry-items-in-storage-room-with-nonperishable-food-picture-id1302554065?k=20&m=1302554065&s=612x612&w=0&h=9JVItyQbfHA-QEGLEcIdCUFknjDI2wMzziddKtG_MjA=);
     background-color: rgb(250, 207, 241);
     background-size: 600px 400px;
@@ -144,7 +143,7 @@ a:hover{
     margin: 2rem;
     padding: 2rem;
     height: 400px;
-    background-image: url(https://images.unsplash.com/photo-1471107340929-a87cd0f5b5f3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8ZXNjcmliaXJ8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60);
+    background-image: url(https://media.istockphoto.com/photos/five-gold-star-rate-review-customer-experience-quality-service-on-picture-id1329308923?b=1&k=20&m=1329308923&s=170667a&w=0&h=pab-KvIvHqV4YBRCfV_aqBhdOZ7ZXjwp_-vAh2HZY7w=);
     background-color:   rgb(195, 200, 233);
     text-align: center;
     background-size: 600px 400px;
@@ -174,6 +173,8 @@ a:hover{
     border-radius: 2rem;
     align-items: center;
     justify-content: center;
+    display: flex;
+    flex-direction: row;
 
     animation: crecer 2s infinite
 }
@@ -191,31 +192,27 @@ a:hover{
 .seccionCuatro{
     grid-area: seccionCuatro;
     display: grid;
-    
 }
-.container{
+.cuadroSeccionCuatro{
     display: grid;
     margin: 2rem;
     padding: 2rem;
-    height: 400px;
+    height: 450px;
     text-align: center;
     align-items: center;
     justify-content: center;
     line-height: 2;
+    background-image: url(https://images.unsplash.com/photo-1554034483-04fda0d3507b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80);
+    border: 2rem rgb(195, 200, 233);
+    border-style:outset ;
     border-radius: 2rem;
+    display: flex;
+    flex-direction: row;
 }
 label{
+    color: rgb(0, 0, 0);
     font-size: 2em;
     text-transform: capitalize;
-}
-.formularioContorno{
-    height: 80%;
-    width: 90%;
-    justify-content: space-between;
-    gap: 30px;
-    border-style: hidden;
-    border-width: .3em;
-    border-color: rgb(187, 187, 255);
 }
 .subtituloTexto{
     display: flex;
@@ -228,18 +225,6 @@ label{
     font-family: 'Abril Fatface', cursive;
     text-transform: uppercase;
 }
-/* .content{
-    display: grid
-    grid-template-areas:
-    " head head head "
-    " foto1 . foto3 "
-    " foto2 . foto4 "
-    " footer footer footer "
-    ;
-    grid-template-columns: 1fr, 2fr, 2fr;
-    grid-template-rows: 1fr, 2fr, 2fr, 1fr;
-    max-width: 728px;
-} */
 .contenidoPagina{
     grid-area: foto;
     display: inline-flex;
@@ -314,11 +299,6 @@ p.img{
     display: flex;
     justify-content: center;
 }
-/* ul li{
-    display: flex;
-    justify-content: center;
-    text-decoration:none;
-} */
 .linkInicio:hover{
     color: rgb(247, 150, 206);
 }
@@ -327,10 +307,10 @@ p.img{
     display: flex;
     background-color: rgba(139, 191,239, 0.68);
     text-transform: capitalize;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     font-family: 'Oleo Script', cursive;
-    font-size: 2em;
+    font-size: 1.5em;
     color: black;
     position: sticky;
 }
