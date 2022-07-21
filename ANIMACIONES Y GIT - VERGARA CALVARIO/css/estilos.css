@@ -19,7 +19,7 @@ h2{
     width: 100%;
     color: rgb(255, 255, 255);
     text-transform: uppercase;
-    font-size: 3em;
+    font-size: 2.5em;
     font-family: 'Abril Fatface', cursive;
     align-items: center;
     justify-content: center;
@@ -101,20 +101,6 @@ a:hover{
     color: rgb(250, 250, 250); 
     text-decoration: none;
 }
-/* .nombrePagina{
-    text-transform: capitalize;
-    font-family: 'Oleo Script', cursive;
-} */
-/* .cuadroSecciones{
-    padding: 1%;
-    display: flex;
-    background-color: white;
-    font-size: 2em;
-    text-transform: capitalize;
-    text-align: justify;
-    justify-content: space-evenly;
-    align-items: center;
-} */
 .seccionUno{
     grid-area: seccionUno;
     display: grid;
@@ -125,7 +111,6 @@ a:hover{
     margin: 2rem;
     padding: 2rem;
     height: 400px;
-    /* background-image: url(https://images.unsplash.com/photo-1554034483-04fda0d3507b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80); */
     background-image: url(https://media.istockphoto.com/photos/organised-pantry-items-in-storage-room-with-nonperishable-food-picture-id1302554065?k=20&m=1302554065&s=612x612&w=0&h=9JVItyQbfHA-QEGLEcIdCUFknjDI2wMzziddKtG_MjA=);
     background-color: rgb(250, 207, 241);
     background-size: 600px 400px;
@@ -168,21 +153,21 @@ a:hover{
     padding: 2rem;
     height: 400px;
     background-color: rgb(250, 207, 241);
+    background-size: 600px 400px;
+    background-position: center;
     text-align: center;
     line-height: 2;
     border-radius: 2rem;
     align-items: center;
     justify-content: center;
-    display: flex;
-    flex-direction: row;
+    gap: 5rem;
 
     animation: crecer 2s infinite
 }
 .seccionTresDescripcion{
     display: flex;
-    width: 550px;
+    width: 50rem;
 }
-
 @keyframes crecer {
     0%{transform: scale(1);}
     25%{transform: scale(.9);}
@@ -206,7 +191,7 @@ a:hover{
     border: 2rem rgb(195, 200, 233);
     border-style:outset ;
     border-radius: 2rem;
-    display: flex;
+    /* display: flex; */
     flex-direction: row;
 }
 label{
@@ -225,6 +210,48 @@ label{
     font-family: 'Abril Fatface', cursive;
     text-transform: uppercase;
 }
+img{
+    display: flex;
+    height: auto;
+    width: 100%;
+    max-height: 220px;
+    max-width: 300px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2rem;
+}
+.footer{
+    grid-area: footer;
+    display: flex;
+    background-color: rgba(139, 191,239, 0.68);
+    text-transform: capitalize;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Oleo Script', cursive;
+    font-size: 1.5em;
+    color: black;
+    position: sticky;
+}
+footer{
+    height: 8rem;
+}
+@media screen and (max-width: 1024px) {
+    body{ 
+        background-color: rgb(190, 204, 252);
+        font-family: 'Oleo Script';    }
+    .grid{
+            grid-template-areas: 
+            " header "
+            " seccionUno  "
+            " seccionDos  "   
+            " seccionTres " 
+            " seccionCuatro "
+            " footer ";
+            grid-template-columns: 100% ;
+            grid-template-rows: .5fr 1.5fr 1.5fr 1.5fr 1.5fr .5fr ;
+            gap: 1.5rem;
+        }
+    }    
 .contenidoPagina{
     grid-area: foto;
     display: inline-flex;
@@ -240,15 +267,6 @@ label{
     text-transform: capitalize;
     text-align: justify;
     flex-direction: row;
-}
-img{
-    display: flex;
-    width: auto;
-    height: auto;
-    width: 300px;
-    max-height: 300px;
-    justify-content: center;
-    align-items: center;
 }
 .galeriaUno{
     width:100%;
@@ -275,57 +293,3 @@ p.galeriaNombreArticulo{
         transform: rotate(359deg);
     }
 }
-picture.galeriaImagenUno{
-    display: grid;
-    grid-area: foto1;
-}
-picture.galeriaImagenDos{
-    display: grid;
-    grid-area: foto2;
-}
-picture.galeriaImagenTres{
-    display: grid;
-    grid-area: foto3;
-}
-picture.galeriaImagenCuatro{
-    display: grid;
-    grid-area: foto4;
-}
-p.img{
-    display: flex;
-    justify-content: center;
-}
-.galeriaListadoArticulos{
-    display: flex;
-    justify-content: center;
-}
-.linkInicio:hover{
-    color: rgb(247, 150, 206);
-}
-.footer{
-    grid-area: footer;
-    display: flex;
-    background-color: rgba(139, 191,239, 0.68);
-    text-transform: capitalize;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Oleo Script', cursive;
-    font-size: 1.5em;
-    color: black;
-    position: sticky;
-}
-footer{
-    height: 8rem;
-}
-/* @media screen and (max-width: 1024px) {
-    body{ background-color: rgb(190, 204, 252);}
-    #contenedor{
-        grid-template-areas:
-        " head head  "
-        " menu menu  "
-        " cuadro  cuadro "
-        " cuadro  cuadro "
-        " footer footer";
-        grid-template-columns: repeat (2fr, 2fr);
-        grid-template-rows: 2fr, 1fr, 3fr, 3fr, 2fr;
-    }    } */
